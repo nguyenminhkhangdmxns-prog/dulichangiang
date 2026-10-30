@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá Du Lịch An Giang - Vùng Đất Thất Sơn Kỳ Bí</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --secondary-color: #f57c00;
+            --text-color: #333;
+            --bg-light: #f4f6f4;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://vnecdn.net');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 10px auto 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+            color: #111;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .cuisine-section {
+            background-color: var(--bg-light);
+            padding: 40px 20px;
+            border-radius: 8px;
+            margin-bottom: 50px;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-container { flex-direction: column; gap: 10px; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">🌴 An Giang Travel</a>
+            <nav>
+                <a href="#diadiem">Địa Điểm</a>
+                <a href="#amthuc">Ẩm Thực</a>
+                <a href="#kinhnghiem">Kinh Nghiệm</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Khám Phá An Giang</h1>
+        <p>Vẻ đẹp bình yên của vùng đất chín rồng, nơi hòa quyện giữa thiên nhiên hoang sơ và văn hóa tâm linh độc đáo.</p>
+    </section>
+
+    <div class="container">
+        
+        <!-- Mục 1: Địa điểm tham quan -->
+        <section id="diadiem">
+            <h2 class="section-title">Địa Điểm Tham Quan Trọng Điểm</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <img src="https://vnecdn.net" alt="Rừng Tràm Trà Sư">
+                    <div class="card-content">
+                        <h3>Rừng Tràm Trà Sư</h3>
+                        <p>Khu rừng ngập nước đặc trưng độc đáo nhất miền Tây. Bạn sẽ được ngồi xuồng ba lá len lỏi qua những thảm bèo xanh ngắt, ngắm nhìn hệ sinh thái chim chóc hoang dã vô cùng trù phú.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://vnecdn.net" alt="Miếu Bà Chúa Xứ Núi Sam">
+                    <div class="card-content">
+                        <h3>Miếu Bà Chúa Xứ Núi Sam</h3>
+                        <p>Trung tâm du lịch tâm linh lớn nhất vùng Đồng bằng Sông Cửu Long tại Châu Đốc. Nơi đây cực kỳ linh thiêng, thu hút hàng triệu lượt khách đến chiêm bái, cầu an mỗi năm.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://vnecdn.net" alt="Cánh đồng thốt nốt">
+                    <div class="card-content">
+                        <h3>Cánh Đồng Thốt Nốt</h3>
+                        <p>Biểu tượng chân thật và thơ mộng nhất của vùng đất Tri Tôn, Tịnh Biên. Những hàng cây thốt nốt cao vút vươn mình giữa đồng lúa tạo nên bức tranh làng quê Khmer bình yên.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Mục 2: Ẩm thực -->
+        <section id="amthuc" class="cuisine-section">
+            <h2 class="section-title">Ẩm Thực Đặc Sắc An Giang</h2>
+            <div class="grid">
+
+                <div class="card">
+                    <img src="https://vnecdn.net" alt="Bún cá Châu Đốc">
+                    <div class="card-content">
+                        <h3>Bún Cá Châu Đốc</h3>
+                        <p>Món ăn mang hương vị đậm đà nức tiếng với nước dùng nấu từ ngải bún và mắm ruốc, ăn kèm cá lóc đồng ngọt thịt và bông điên điển giòn rụm đậm chất sông nước.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://vnecdn.net" alt="Bánh bò thốt nốt">
+                    <div class="card-content">
+                        <h3>Bánh Bò Thốt Nốt</h3>
+                        <p>Món bánh ngọt thanh làm từ đường thốt nốt nguyên chất, có màu vàng ươm tự nhiên, xốp phồng và thơm ngậy cốt dừa, là món quà ăn vặt không thể bỏ qua.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Mục 3: Cẩm nang kinh nghiệm -->
+        <section id="kinhnghiem">
+            <h2 class="section-title">Kinh Nghiệm Du Lịch Bỏ Túi</h2>
+            <div style="max-width: 800px; margin: 0 auto; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <p style="margin-bottom: 15px;"><strong>Thời điểm lý tưởng:</strong> Bạn nên đi vào <em>mùa nước nổi</em> (từ tháng 9 đến tháng 11) để cảm nhận trọn vẹn vẻ đẹp của Rừng tràm Trà Sư, hoặc tháng 4 âm lịch để tham gia lễ hội Vía Bà Chúa Xứ náo nhiệt.</p>
+                <p style="margin-bottom: 15px;"><strong>Phương tiện di chuyển:</strong> Từ TP.HCM, bạn có thể dễ dàng bắt xe khách giường nằm đến Long Xuyên hoặc Châu Đốc. Sau đó, thuê xe máy là cách tốt nhất để tự do khám phá các cung đường uốn lượn quanh vùng Thất Sơn.</p>
+                <p><strong>Lưu ý tâm linh:</strong> Khi tham quan các khu vực đền chùa, miếu mạo tại Núi Sam hay Núi Cấm, hãy mặc trang phục kín đáo, lịch sự để tôn trọng văn hóa bản địa.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bản quyền thuộc về Cẩm Nang Du Lịch An Giang. Thiết kế bởi Chuyên Gia Công Nghệ AI.</p>
+    </footer>
+
+</body>
+</html>
